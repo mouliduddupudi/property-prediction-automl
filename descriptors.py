@@ -1,6 +1,13 @@
 '''
 The following code represents the smiles data in descriptors form.
 '''
+import pandas as pd
+from rdkit import Chem
+from rdkit.Chem import AllChem
+import pandas as pd
+from tqdm import tqdm
+from rdkit.Chem import Descriptors
+from rdkit.ML.Descriptors import MoleculeDescriptors
 
 def descriptors(data):
     print("desp_calculation")
